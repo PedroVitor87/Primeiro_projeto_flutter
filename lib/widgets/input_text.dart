@@ -3,11 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 
 class InputText extends StatelessWidget {
   final String? placeholder;
-  InputText({this.placeholder});
+  final bool isPassword;
+  InputText({this.placeholder, this.isPassword = false});
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      obscureText: isPassword,
       style: GoogleFonts.inter(fontSize: 16, color: Colors.white),
       decoration: InputDecoration(
         border: OutlineInputBorder(

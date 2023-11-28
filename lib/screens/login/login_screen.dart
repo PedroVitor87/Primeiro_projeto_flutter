@@ -26,9 +26,9 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     AppTitle('Login'),
                     SizedBox(height: 20),
-                    InputText(placeholder: 'Email'),
+                    InputText(placeholder: 'Digite o seu Email'),
                     SizedBox(height: 20),
-                    InputText(placeholder: 'Senha'),
+                    InputText(placeholder: 'Digite a sua Senha', isPassword: true,),
                     SizedBox(height: 20),
                     SizedBox(
                       width: double.infinity,
